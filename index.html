@@ -19,30 +19,76 @@
 
     body {
       min-height: 100%;
-      margin: 100px 25px;
+      margin: 40px 25px;
       background-color: var(--Light-Grayish-Blue);
+      font-weight: 15px;
     }
 
     main {
       background-color: white;
       display: flex;
       flex-direction: column;
+      border-radius: 15px;
     }
 
     .imageSection__image--style {
       width: 100%;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
     }
 
     .content{
-
+      margin: 0 20px;
     }
 
     .content__heading--style {
       color: var(--Very-Dark-Grayish-Blue);
+      font-weight: 700;
     }
 
     .content__quote--style {
       color: var(--Desaturated-Dark-Blue);
+      margin:0;
+    }
+
+    .content__profile--container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .profile__avatar--style {
+      width: 30px;
+      border-radius: 45px;
+      flex: 1;
+    }
+
+    .profile__info--container {
+      flex: 2;
+      margin-left: 10px;
+    }
+
+    .info__name--style {
+      color: var(--Very-Dark-Grayish-Blue);
+      font-weight: 700;
+    }
+
+    .info__date--style {
+      color: var(--Desaturated-Dark-Blue);
+    }
+
+    .profile__share--container {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+    }
+    
+    .profile__share--style {
+      width: 30px;
+      background-color: var(--Light-Grayish-Blue);
+      border-radius: 25px;
+      padding: 10px;
     }
 
     @media only screen and (min-width: 600px) {
@@ -67,12 +113,29 @@
 </head>
 <body>
   <main>
-    <section class="imageSection">
-      <img src="images/drawers.jpg" class="imageSection__image--style" />
-    </section>
+    <div class="imageSection">
+      <img src="images/drawers.jpg" class="imageSection__image--style" alt="" />
+    </div>
     <section class="content">
-      <p class="content__heading--style"></p>
-      <blockquote class="content__quote--style"></blockquote>
+      <h1 class="content__heading--style">Shift the overall look and feel by adding these wonderful 
+        touches to furniture in your home
+      </h1>
+      <blockquote class="content__quote--style">Ever been in a room and felt like something was missing? Perhaps 
+        it felt slightly bare and uninviting. I’ve got some simple tips 
+        to help you make any room feel complete.
+      </blockquote>
+      <div class="content__profile--container">
+        
+        <img src="images/avatar-michelle.jpg" class="profile__avatar--style" alt="" />
+        
+        <div class="profile__info--container">
+          <p class="info__name--style">Michelle Appleton</p>
+          <p class="info__date--style">28 Jun 2020</p>
+        </div>
+        <div class="profile__share--container">
+          <img src="images/icon-share.svg" class="profile__share--style" alt="Share Icon" />
+        </div>
+      </>
     </section>
   </main>
 </body>
