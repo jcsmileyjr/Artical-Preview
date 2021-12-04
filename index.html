@@ -103,6 +103,17 @@
       border-radius: 25px;
       padding: 10px;
     }
+
+    .alternative__profile--container {
+      flex: 1;
+      display: flex;
+      background-color: var(--Very-Dark-Grayish-Blue);
+      justify-content: space-around;
+    }
+
+    .hide {
+      display: none;
+    }
     
     @media only screen and (min-width: 600px) {
       main {
@@ -174,6 +185,10 @@
       .info__name--style {
         font-size: smaller;
       }
+      
+      .profile__share--style {
+        width: 25px;
+      }
     }
   </style>
 </head>
@@ -190,19 +205,41 @@
         it felt slightly bare and uninviting. I’ve got some simple tips 
         to help you make any room feel complete.
       </blockquote>
-      <div class="content__profile--container">
-        
-        <img src="images/avatar-michelle.jpg" class="profile__avatar--style" alt="" />
-        
+      <div id="profile__share" class="content__profile--container">        
+        <img src="images/avatar-michelle.jpg" class="profile__avatar--style" alt="" />        
         <div class="profile__info--container">
           <p class="info__name--style">Michelle Appleton</p>
           <p class="info__date--style">28 Jun 2020</p>
         </div>
-        <div class="profile__share--container">
+        <div class="profile__share--container" onclick="test()">
           <img src="images/icon-share.svg" class="profile__share--style" alt="Share Icon" />
         </div>
-      </>
+      </div>
+      <div id="profile__alternative" class="alternative__profile--container hide">        
+        <p>SHARE</p>
+        
+        <img src="images/icon-facebook.svg" class="profile__share--style" alt="" />
+        <img src="images/icon-twitter.svg" class="profile__share--style" alt="" />
+        <img src="images/icon-pinterest.svg" class="profile__share--style" alt="" />
+        
+        <div class="profile__alternative--container" onclick="back()">
+          <img src="images/icon-share.svg" class="profile__share--style" alt="Share Icon" />
+        </div>
+      </div>
     </section>
   </main>
 </body>
+<script>
+  const test = () => {
+    //alert("hello world");
+    document.getElementById('profile__alternative').classList.remove('hide');
+    document.getElementById('profile__share').classList.add('hide');
+  }
+
+  const back = () => {
+    alert("Go back")
+    document.getElementById('profile__alternative').classList.add('hide');
+    document.getElementById('profile__share').classList.remove('hide');
+  }
+</script>
 </html>
