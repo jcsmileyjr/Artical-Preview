@@ -23,7 +23,7 @@
 
     body {
       min-height: 100%;
-      margin: 40px 15vw;
+      margin: 40px 10vw;
       background-color: var(--Light-Grayish-Blue);
       font-size: 15px;
       font-family: 'Manrope', sans-serif;
@@ -74,17 +74,19 @@
     }
 
     .profile__info--container {
-      flex: 2;
+      flex: 3;
       margin-left: 10px;
     }
 
     .info__name--style {
       color: var(--Very-Dark-Grayish-Blue);
       font-weight: 700;
+      margin-bottom:2px;
     }
 
     .info__date--style {
       color: var(--Desaturated-Dark-Blue);
+      margin-top:2px;
     }
 
     .profile__share--container {
@@ -162,6 +164,12 @@
     @media only screen and (min-width: 1800px) {
       main {
         max-width: 50%;
+      }
+    }
+
+    @media only screen and (max-width: 330px) {
+      .info__name--style {
+        font-size: smaller;
       }
     }
   </style>
