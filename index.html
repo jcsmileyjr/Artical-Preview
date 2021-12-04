@@ -48,12 +48,12 @@
 
     .content{
       margin: 0 20px;
-      margin-bottom: 20px;
     }
 
     .content__heading--style {
       color: var(--Very-Dark-Grayish-Blue);
       font-weight: 700;
+      font-size: larger;
     }
 
     .content__quote--style {
@@ -104,11 +104,30 @@
       padding: 10px;
     }
 
+    .alternative {
+      margin: 0 20px;
+      margin-bottom: 20px;
+    }
+
     .alternative__profile--container {
       flex: 1;
       display: flex;
       background-color: var(--Very-Dark-Grayish-Blue);
       justify-content: space-around;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .alternative__text--style {
+      color: var(--Grayish-Blue);
+    }
+
+    .alternative__share--style {
+      height: 20px;
+    }
+
+    .altOption {
+      align-self: flex-end;
     }
 
     .hide {
@@ -205,6 +224,8 @@
         it felt slightly bare and uninviting. I’ve got some simple tips 
         to help you make any room feel complete.
       </blockquote>
+    </section>
+    <section class="alternative">      
       <div id="profile__share" class="content__profile--container">        
         <img src="images/avatar-michelle.jpg" class="profile__avatar--style" alt="" />        
         <div class="profile__info--container">
@@ -216,14 +237,14 @@
         </div>
       </div>
       <div id="profile__alternative" class="alternative__profile--container hide">        
-        <p>SHARE</p>
+        <p class="alternative__text--style">SHARE</p>
         
-        <img src="images/icon-facebook.svg" class="profile__share--style" alt="" />
-        <img src="images/icon-twitter.svg" class="profile__share--style" alt="" />
-        <img src="images/icon-pinterest.svg" class="profile__share--style" alt="" />
+        <img src="images/icon-facebook.svg" class="alternative__share--style" alt="" />
+        <img src="images/icon-twitter.svg" class="alternative__share--style" alt="" />
+        <img src="images/icon-pinterest.svg" class="alternative__share--style" alt="" />
         
         <div class="profile__alternative--container" onclick="back()">
-          <img src="images/icon-share.svg" class="profile__share--style" alt="Share Icon" />
+          <img src="images/icon-share.svg" class="profile__share--style altOption" alt="Share Icon" />
         </div>
       </div>
     </section>
@@ -237,7 +258,7 @@
   }
 
   const back = () => {
-    alert("Go back")
+    //alert("Go back")
     document.getElementById('profile__alternative').classList.add('hide');
     document.getElementById('profile__share').classList.remove('hide');
   }
