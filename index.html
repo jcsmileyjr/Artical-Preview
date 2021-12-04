@@ -23,7 +23,7 @@
 
     body {
       min-height: 100%;
-      margin: 40px 25px;
+      margin: 40px 15vw;
       background-color: var(--Light-Grayish-Blue);
       font-size: 15px;
       font-family: 'Manrope', sans-serif;
@@ -34,6 +34,10 @@
       display: flex;
       flex-direction: column;
       border-radius: 15px;
+    }
+
+    .imageSection {
+        display: flex;
     }
 
     .imageSection__image--style {
@@ -65,7 +69,7 @@
 
     .profile__avatar--style {
       width: 30px;
-      border-radius: 45px;
+      border-radius: 90px;
       flex: 1;
     }
 
@@ -95,8 +99,19 @@
       border-radius: 25px;
       padding: 10px;
     }
-
+    
     @media only screen and (min-width: 600px) {
+      main {
+      margin: auto;
+      width: 80%;
+      }
+
+      body {
+        margin: 40px 20vw;
+      }
+    }
+
+    @media only screen and (min-width: 900px) {
       body {
         width: initial;
         min-height: 100vh;
@@ -104,14 +119,49 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 41px 150px;
       }
 
       main {
         flex-direction: row;
+        width:100%;
       }
 
       .imageSection__image--style {
-        width: 50%;
+        width: 100%;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;        
+      }
+
+      .profile__avatar--style {
+        flex:0;
+        min-width: 65px;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 40px;
+      }
+    }
+
+
+    @media only screen and (min-width: 1200px) {
+      main {
+        max-width: 75%;
+      }
+    }
+
+    @media only screen and (min-width: 1600px) {
+      main {
+        max-width: 65%;
+      }
+    }
+
+    @media only screen and (min-width: 1800px) {
+      main {
+        max-width: 50%;
       }
     }
   </style>
