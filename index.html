@@ -48,6 +48,7 @@
 
     .content{
       margin: 0 20px;
+      margin-bottom: 20px;
     }
 
     .content__heading--style {
@@ -66,6 +67,8 @@
       flex-direction: row;
       align-items: center;
       margin-top: 20px;
+      margin: 0 20px;
+      /* margin-bottom: 20px; */
     }
 
     .profile__avatar--style {
@@ -95,27 +98,41 @@
       flex: 1;
       display: flex;
       justify-content: flex-end;
+      
     }
     
     .profile__share--style {
-      width: 30px;
+      /* width: 30px; */
+      /* padding: 10px; */
       background-color: var(--Light-Grayish-Blue);
       border-radius: 25px;
+      width: 20px;
       padding: 10px;
     }
 
     .alternative {
-      margin: 0 20px;
-      margin-bottom: 20px;
+      /* margin: 0 20px;
+      margin-bottom: 20px; */
     }
 
     .alternative__profile--container {
       flex: 1;
       display: flex;
-      background-color: var(--Very-Dark-Grayish-Blue);
       justify-content: space-around;
       align-items: center;
-      margin-top: 20px;
+      background-color: var(--Very-Dark-Grayish-Blue);
+      padding: 0px 20px;
+      /* padding-bottom: 20px;       */
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+    
+    .alternative__icons {
+      flex:1;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
     }
 
     .alternative__text--style {
@@ -124,10 +141,15 @@
 
     .alternative__share--style {
       height: 20px;
+      margin: 0 10px;
     }
 
     .altOption {
       align-self: flex-end;
+      background-color: var(--Grayish-Blue);
+      border-radius: 25px;
+      width: 20px;
+      padding: 5px;
     }
 
     .hide {
@@ -236,15 +258,15 @@
           <img src="images/icon-share.svg" class="profile__share--style" alt="Share Icon" />
         </div>
       </div>
-      <div id="profile__alternative" class="alternative__profile--container hide">        
-        <p class="alternative__text--style">SHARE</p>
-        
-        <img src="images/icon-facebook.svg" class="alternative__share--style" alt="" />
-        <img src="images/icon-twitter.svg" class="alternative__share--style" alt="" />
-        <img src="images/icon-pinterest.svg" class="alternative__share--style" alt="" />
-        
+      <div id="profile__alternative" class="alternative__profile--container hide">
+        <div class="alternative__icons">
+          <p class="alternative__text--style">SHARE</p>
+          <img src="images/icon-facebook.svg" class="alternative__share--style" alt="" />
+          <img src="images/icon-twitter.svg" class="alternative__share--style" alt="" />
+          <img src="images/icon-pinterest.svg" class="alternative__share--style" alt="" />
+        </div>
         <div class="profile__alternative--container" onclick="back()">
-          <img src="images/icon-share.svg" class="profile__share--style altOption" alt="Share Icon" />
+          <img style="color: white;" src="images/icon-share.svg" class=" altOption" alt="Share Icon" />
         </div>
       </div>
     </section>
