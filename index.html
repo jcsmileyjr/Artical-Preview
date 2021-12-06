@@ -47,27 +47,28 @@
     }
 
     .content{
-      margin: 0 20px;
-      margin-bottom: 20px;
+      /* margin-bottom: 20px; */
     }
 
     .content__heading--style {
       color: var(--Very-Dark-Grayish-Blue);
       font-weight: 700;
       font-size: larger;
+      margin: 0 20px;
     }
 
     .content__quote--style {
       color: var(--Desaturated-Dark-Blue);
       margin:0;
+      margin: 0 20px;
     }
 
     .content__profile--container {
       display: flex;
       flex-direction: row;
       align-items: center;
-      margin-top: 20px;
-      /* margin: 0 20px; */
+      /* margin-top: 20px; */
+      margin: 0 20px; 
       /* margin-bottom: 20px; */
     }
 
@@ -108,11 +109,13 @@
       border-radius: 25px;
       width: 20px;
       padding: 10px;
+      fill: black;
     }
 
     .alternative {
       /* margin: 0 20px;
       margin-bottom: 20px; */
+      margin-top: 20px;
     }
 
     .alternative__profile--container {
@@ -148,8 +151,9 @@
       align-self: flex-end;
       background-color: var(--Grayish-Blue);
       border-radius: 25px;
-      width: 20px;
-      padding: 5px;
+      width: 15px;
+      padding: 10px;
+      fill:white;
     }
 
     .hide {
@@ -267,7 +271,7 @@
             <img src="images/icon-pinterest.svg" class="alternative__share--style" alt="" />
           </div>
           <div class="profile__alternative--container" onclick="back()">
-            <img style="color: white;" src="images/icon-share.svg" class=" altOption" alt="Share Icon" />
+            <svg class="altOption" xmlns="http://www.w3.org/2000/svg" width="25" height="13"><path fill="white" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg>
           </div>
         </div>
       </div>
