@@ -17,8 +17,8 @@ This is a solution to the [Artical Preview component challenge on Frontend Mento
 
 ### Links
 
-- [Live Site URL](https://jcsmileyjr.github.io/Artical-Preview/)
-- [coming soon](https://dev.to/jcsmileyjr/frontend-challenge-6-social-proof-component-25e)
+- [Click to play with the live site](https://jcsmileyjr.github.io/Artical-Preview/)
+- [Click to read Blog Post](https://dev.to/jcsmileyjr/frontend-challenge-7-article-preview-component-15b5)
 
 ### Built with
 
